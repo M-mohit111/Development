@@ -1,0 +1,37 @@
+/* h1{
+    background-color: aquamarine;
+}
+#b{
+    background-color: blueviolet;
+}
+.a{
+    background-color: aqua;
+} */
+
+/* h1{
+    background-color: aqua;
+    background-color: aquamarine;
+}
+h1{
+    background-color: blueviolet;
+} */
+
+/* id>attribute>class>child/descendent>element/group> */
+
+body h1{
+    background-color: aqua !important;
+}
+.a{
+    background-color: blue;
+}
+h1[draggable = "true"]{
+    background-color: cadetblue;
+}
+#b{
+    background-color: chartreuse;
+}
+h1{
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,15 @@
+*{margin: 0;}
+.a,.c{
+    display: inline-block;
+    height: 40vh;
+    width: 25vw;
+    background-color: red;
+}
+.b, .d{
+    display: inline-block;
+    height: 40vh;
+    width: 60vw;
+    background-color: red;
+}
+.b,.d{margin-left: 14vw;}
+.c,.d{margin-top:20vh;}

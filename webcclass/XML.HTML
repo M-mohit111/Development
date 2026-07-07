@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>XLink Example</title>
+</head>
+<body>
+    <h1>XLink: Inserting Hyperlinks in XML</h1>
+    <p>Name: Mohit Agrawal</p>
+    <p>Reg. No.: 23BCE10276</p>
+
+    <div id="output"></div>
+
+    <script>
+        var xmlString = `
+        <resources xmlns:xlink="http://www.w3.org/1999/xlink">
+            <link xlink:type="simple" xlink:href="https://www.w3schools.com">Visit W3Schools</link>
+            <link xlink:type="simple" xlink:href="https://www.google.com">Search on Google</link>
+        </resources>
+        `;
+
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(xmlString, "application/xml");
+        var links = xmlDoc.getElementsByTagName("link");
+        var container = document.getElementById("output");
+
+        var xlinkNS = "http://www.w3.org/1999/xlink";
+
+        for (var i = 0; i < links.length; i++) {
+            var url = links[i].getAttributeNS(xlinkNS, "href");
+            var text = links[i].textContent;
+
+            var a = document.createElement("a");
+            a.href = url;
+            a.textContent = text;
+            a.target = "_blank"; // Open link in a new tab
+            container.appendChild(a);
+            container.appendChild(document.createElement("br")); // Add a line break
+        }
+    </script>
+</body>
+</html>

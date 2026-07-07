@@ -1,0 +1,21 @@
+{
+  "name": "day14",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.14.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}

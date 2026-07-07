@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.astro-form, .result-container {
+    /* The "Glassmorphism" effect */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.astro-form h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.astro-form p {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* Fix for white text in dropdown */
+.input-group select option {
+    color: #333;
+}
+
+/* Groups Day/Month/Year inputs */
+.dob-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.dob-group .input-group {
+    flex: 1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #8e44ad;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Result Styling --- */
+
+.result-container {
+    margin-top: 2rem;
+    display: none; /* Hidden by default */
+}
+
+.result-container h2 {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.result-container h2 span {
+    font-weight: 600;
+}
+
+.sign-display {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.sign {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.sign .emoji {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.sign h3 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #f7b731; /* A nice accent color */
+}
+
+.sign p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}

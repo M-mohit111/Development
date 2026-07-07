@@ -1,0 +1,18 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#root{
+    background-color: wheat;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+#result{
+    padding: 20px;
+}

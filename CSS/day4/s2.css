@@ -1,0 +1,39 @@
+.a{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vh;
+    background-color: aqua;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    border-color: blue;
+    margin-left: 35vw;
+}
+.b{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vh;
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin-left: 35vw;
+}
+.c{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vh;
+    background-color: chartreuse;
+    border-radius: 5px;
+    margin-left: 35vw;
+}
+.a:hover{
+    background-color: wheat;
+    transform: scale(1.5);
+}
+.b:hover{
+    background-color: wheat;
+    transform: scale(1.5);
+}
+.c:hover{
+    background-color: wheat;
+    transform: scale(1.5);
+}

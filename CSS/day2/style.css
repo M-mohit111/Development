@@ -1,0 +1,15 @@
+div p{
+    color: aqua;
+}
+h1{color: blue;}
+/* ul{color: yellow; background-color: gray;} */
+ul{color: white;}
+h2{color: rgb(256,20,100)}
+h3{color: #a38478;}
+h4{color: hsl(50,50%,50%);}
+body{
+    background-image:url(./wallpaperflare.com_wallpaper\ \(5\).jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}

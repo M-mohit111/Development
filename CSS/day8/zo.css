@@ -1,0 +1,41 @@
+*{margin: 0;}
+.card{
+    display: inline-block;
+    cursor: pointer;
+}
+.card:hover{background-color: aquamarine;}
+.box{display: inline-block;}
+.resturant{position: relative;}
+.food{position: relative;color: grey;
+font-size: small;}
+.d{position: relative;color: grey;font-size: x-small;}
+.rating{
+    background-color: green;
+    height: 17px;
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    right: 2px;
+    color: white;
+}
+.img{border-radius: 10px;}
+.image{ position: relative;}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.prize{
+    position: absolute;
+    right: 2px;
+}
+.distance{
+    position: absolute;
+    right: 2px;
+}
+.off{
+    font-size: small;
+    position: absolute;
+    color:white;
+    background-color: rgba(15, 15, 87, .5);
+    bottom: 4px
+}

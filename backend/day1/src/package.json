@@ -1,0 +1,6 @@
+{
+    "type": "module"
+}
+
+
+// module is for mjs(es module) in this no need to write file extension in .mjs it work with .js and common is for cjs

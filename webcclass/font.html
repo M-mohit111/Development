@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Examples</title>
+    
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Basic styles for the whole page */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* A container for the content */
+        .container {
+            width: 80%;
+            margin: auto; /* Center the container */
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            padding-bottom: 5px;
+        }
+
+        /* A simple box for the examples */
+        .example-box {
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        /* Font Family Example */
+        .font-family-example {
+            font-family: Georgia, serif;
+        }
+
+        /* Font Fallback Example */
+        .font-fallback-example {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Font Style Examples */
+        .font-style-italic {
+            font-style: italic;
+        }
+        
+        .font-weight-bold {
+            font-weight: bold;
+        }
+
+        /* Font Size Examples */
+        .font-size-px {
+            font-size: 14px;
+        }
+        
+        .font-size-rem {
+            font-size: 1.2rem; 
+        }
+        
+        .font-size-em {
+            font-size: 1.1em;
+        }
+
+        /* Google Fonts Examples */
+        .google-font-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+        }
+        .google-font-body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+        }
+        
+        /* Font Shorthand Example */
+        .font-shorthand-example {
+            font: italic bold 1.1rem/1.5 'Playfair Display', serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Font</h1>
+        <div id="font-family">
+            <h2>Font Family</h2>
+            <p class="font-family-example example-box">Quick brown fox.</p>
+        </div>
+        <div id="font-fallbacks">
+            <h2>Web Safe Fonts and Fallbacks</h2>
+            <p class="font-fallback-example example-box">Arial, then Helvetica.</p>
+        </div>
+
+        <div id="font-style">
+            <h2>Font Style and Weight</h2>
+            <p class="font-style-italic example-box">Italic style text.</p>
+            <p class="font-weight-bold example-box">Bold weight text.</p>
+        </div>
+
+        <div id="font-size">
+            <h2>Font Size</h2>
+            <p class="font-size-px example-box">14px (pixels).</p>
+            <p class="font-size-rem example-box">1.2rem (relative).</p>
+            <p class="font-size-em example-box">1.1em (relative).</p>
+        </div>
+
+        <div id="google-fonts">
+            <h2>Google Fonts</h2>
+            <div class="example-box">
+                <p class="google-font-heading">Heading: Playfair Display.</p>
+                <p class="google-font-body" style="margin-top: 5px;">Body: Roboto font.</p>
+            </div>
+        </div>
+        
+        <div id="font-shorthand">
+            <h2>Font Shorthand</h2>
+            <p class="font-shorthand-example example-box">Shorthand: italic bold 1.1rem.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: wheat;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    height: 50px;
+    width: 80px;
+}
+#red{
+    background-color: red;
+    border: solid 5px black;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}

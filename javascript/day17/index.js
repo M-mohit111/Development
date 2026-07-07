@@ -1,0 +1,2 @@
+// today we have study about how the code work when we run some time when write console.log output before the varible,let , const how it work 
+// why it show undefined , varible create after initialization , error in different case

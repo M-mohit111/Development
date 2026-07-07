@@ -1,0 +1,38 @@
+h1{
+    background-color: aqua;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    padding: 5px;
+    width: 50%;
+    height: 20%;
+    border-radius: 5px;
+}
+ul{
+    background-color: aquamarine;
+    border: 5px brown solid;
+    border-left-width: 20vw;
+}
+#a{
+    background-color: darkkhaki;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    /* border-left-width:50px;
+    border-right-width: 50px; */
+    border-width: 10px 50px;
+    width: 200px;
+    height: 200px;
+}
+#b{
+    background-color: darkkhaki;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    border-width: 10px 50px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Properties Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            font-size: 14px; /* Reduced base font size */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 1rem auto; /* Reduced margin */
+            padding: 1.5rem; /* Reduced padding */
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid #e2e8f0; /* Thinner border */
+            padding-bottom: 0.25rem; /* Reduced padding */
+            margin-bottom: 0.75rem; /* Reduced margin */
+        }
+        
+        p {
+            margin-bottom: 0.5rem; /* Reduced margin */
+            padding: 0.5rem; /* Reduced padding */
+            border-radius: 0.5rem;
+            background-color: #f1f5f9;
+        }
+
+        .text-color-example {
+            color: #db2777;
+        }
+
+        .text-align-left {
+            text-align: left;
+        }
+        .text-align-center {
+            text-align: center;
+        }
+        .text-align-right {
+            text-align: right;
+        }
+        .text-align-justify {
+            text-align: justify;
+        }
+
+        .text-decoration-underline {
+            text-decoration: underline;
+        }
+        .text-decoration-overline {
+            text-decoration: overline;
+        }
+        .text-decoration-line-through {
+            text-decoration: line-through;
+        }
+        .text-decoration-none {
+            text-decoration: none;
+        }
+
+        .text-transform-uppercase {
+            text-transform: uppercase;
+        }
+        .text-transform-lowercase {
+            text-transform: lowercase;
+        }
+        .text-transform-capitalize {
+            text-transform: capitalize;
+        }
+
+        .letter-spacing-example {
+            letter-spacing: 2px; /* Reduced spacing */
+        }
+        .word-spacing-example {
+            word-spacing: 5px; /* Reduced spacing */
+        }
+        .line-height-example {
+            line-height: 1.5; /* Reduced line height */
+        }
+
+        .text-shadow-example {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-size: 1.1rem; /* Reduced font size */
+            font-weight: bold;
+        }
+        .text-shadow-multiple {
+            text-shadow: 
+                1px 1px 2px black, 
+                0 0 0.5em blue, 
+                0 0 0.1em blue;
+            color: white;
+            font-size: 1.1rem; /* Reduced font size */
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body class="p-2"> <!-- Reduced body padding -->
+
+    <div class="container">
+        <!-- Reduced font size and margin on h1 -->
+        <h1 class="text-xl font-bold mb-4">Text</h1>
+
+        <!-- Reduced font size and margin on h2 -->
+        <h2 class="text-lg font-semibold mt-4">1. Text Color</h2>
+        <p class="text-color-example">This text has a custom fuchsia color.</p>
+
+        <h2 class="text-lg font-semibold mt-4">2. Text Alignment</h2>
+        <p class="text-align-left">This text is aligned to the left. This is the default for left-to-right languages.</p>
+        <p class="text-align-center">This text is centered.</p>
+        <p class="text-align-right">This text is aligned to the right.</p>
+        <p class="text-align-justify">This text is justified. The spacing between words is adjusted so that all lines are equal in length, creating clean edges on both the left and right sides. This can sometimes create large gaps between words.</p>
+        
+        <h2 class="text-lg font-semibold mt-4">3. Text Decoration</h2>
+        <p class="text-decoration-underline">This text has an underline.</p>
+        <p class="text-decoration-overline">This text has an overline.</p>
+        <p class="text-decoration-line-through">This text has a line through it.</p>
+        <p>This is a <a href="#" class="text-decoration-none text-blue-600 hover:underline">link with no initial decoration</a> (but it gets one on hover).</p>
+
+        <h2 class="text-lg font-semibold mt-4">4. Text Transformation</h2>
+        <p class="text-transform-uppercase">This text is transformed to uppercase.</p>
+        <p class="text-transform-lowercase">This Text Is Transformed To LOWERCASE.</p>
+        <p class="text-transform-capitalize">this text is capitalized.</p>
+
+        <h2 class="text-lg font-semibold mt-4">5. Text Spacing</h2>
+        <p class="letter-spacing-example">This text has increased letter spacing.</p>
+        <p class="word-spacing-example">This text has increased word spacing.</p>
+        <p class="line-height-example">This paragraph has an increased line height. This makes the text more readable by providing more vertical space between the lines of text, which can be very helpful for large blocks of content.</p>
+
+        <h2 class="text-lg font-semibold mt-4">6. Text Shadow</h2>
+        <p class="text-shadow-example">This text has a simple shadow.</p>
+        <p class="text-shadow-multiple bg-gray-800">This text has multiple, complex shadows.</p>
+
+    </div>
+
+</body>
+</html>

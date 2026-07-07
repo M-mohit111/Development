@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.card{
+    display: inline-block;
+    cursor: pointer;
+}
+.card:hover{background-color: aquamarine;}
+.box{display: inline-block;}
+.resturant{position: relative;}
+.food{position: relative;color: grey;
+font-size: small;}
+.d{position: relative;color: grey;font-size: x-small;}
+.rating{
+    background-color: green;
+    height: 17px;
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    right: 2px;
+    color: white;
+}
+.img{border-radius: 10px;}
+.image{ position: relative;}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.prize{
+    position: absolute;
+    right: 2px;
+}
+.distance{
+    position: absolute;
+    right: 2px;
+}
+.off{
+    font-size: small;
+    position: absolute;
+    color:white;
+    background-color: rgba(15, 15, 87, .5);
+    bottom: 4px
+}
+.first{
+    margin-left: 30vw;
+}
+.brand{
+    margin-right: 50px;
+    font-weight: bolder;
+    color: rgb(10, 10, 102);
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.searching{
+    width: 300px;
+    margin-right: 50px;
+    position: relative;
+    bottom: 5px;
+}
+button{
+    position: relative;
+    bottom: 5px;
+    color: grey;
+    border: none;
+}
+.second{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.box{
+    display: inline-block;
+}
+.dineing,.de,.nig{position: relative;
+    bottom: 14px;
+    color: grey;
+}
+.del{margin-left: 20px;
+    margin-right: 20px;
+}
+.third{height: 800px;
+    color: grey;
+    background-color: gold;
+}
+.dinning{margin-left: 37vw;}

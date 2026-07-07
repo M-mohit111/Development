@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding: 1rem;}
+.right button{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    background-color: red;
+    border: none;
+    padding: 0.2rem;
+    cursor: pointer;}
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 0.4rem;}
+.a{font-size: 1rem;font-weight: bold;}
+.search button{
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    padding: 0.15rem;
+    font-size: 1rem;}
+.main{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./download.jpeg);
+}
+.main > h2{color: white; background-color: black; font-size: 1.5rem;}
+.main > button{
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.mover > h2{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.card>h3{color: blue;font-size: 2rem;}
+.movies{display: flex;background-color: wheat;overflow-x: scroll;}
+.card{border: 0.5rem solid grey;text-align: center;}
+.images{
+    height: 400px;
+}
+.pass{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.pass>img{
+    border-radius: 10px;
+    max-width: 80%;
+}

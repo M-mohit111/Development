@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+header{
+    position: fixed;
+    width:100%;
+    background-color: aquamarine;
+}
+main{
+    padding-top: 37px;
+}

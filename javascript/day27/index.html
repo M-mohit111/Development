@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroLogic</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <form class="astro-form" id="astro-form">
+            <h1>✨ Find Your Sign ✨</h1>
+            <p>Enter your birth details to discover your cosmic identity.</p>
+            
+            <div class="input-group">
+                <label for="name">First Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname">
+            </div>
+
+            <div class="dob-group">
+                <div class="input-group">
+                    <label for="month">Month</label>
+                    <select id="month" required>
+                        <option value="">Select...</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="day">Day</label>
+                    <input type="number" id="day" min="1" max="31" required>
+                </div>
+                <div class="input-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" min="1900" max="2025" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Reveal My Signs</button>
+        </form>
+
+        <div class="result-container" id="result-container">
+            </div>
+    </main>
+
+    <script src="./first.js"></script>
+</body>
+</html>
