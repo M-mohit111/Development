@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 async function main(){
-    await mongoose.connect("mongodb+srv://mohit_db_user:mohit12345@cluster0.ihluqut.mongodb.net/bookstore")
+    await mongoose.connect("mongodb+srv://mohit_db_user:mohit12345@cluster0.ihluqut.mongodb.net/Bookstore")
     const newschema = new mongoose.Schema(
         {
             name:String
