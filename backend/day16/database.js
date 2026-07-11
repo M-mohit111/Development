@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 async function main(){
-    await mongoose.connect("mongodb+srv://mohit_db_user:mohit12345@cluster0.ihluqut.mongodb.net/Bookstore")
+    await mongoose.connect("mongodb+srv://mohit_db_user:mohit12345@cluster0.ihluqut.mongodb.net/bookstore")
     const newschema = new mongoose.Schema(
         {
             name:String
@@ -13,7 +13,8 @@ async function main(){
     // await user.create({name:"mohit"})
     // if the collection are more than one then we can use insertmany
     // await user.insertMany([{name:"mohit"},{name:"agrawal"}])
+    const data = await user.find({})
+    console.log(data)
 }
-main()
-    .then(()=>console.log("connection sucessfull"))
-    .catch((error)=>console.log(error))
+
+module.exports = main;
