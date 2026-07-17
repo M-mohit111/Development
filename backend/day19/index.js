@@ -10,7 +10,6 @@ app.use(express.json())
 app.post("/register",async (req,res)=>{
 try{
     validateuser(req.body);
-
     req.body.password = await bcrypt.hash(req.body.password,10);
     console.log(req.body.password);
     await User.create(req.body)
@@ -19,7 +18,27 @@ try{
 catch(err){
     res.send("error "+err.message);
 }
-}) 
+})
+
+app.post("/login", async (req, res) => {
+    try {
+
+        const personinfo = await User.findById(req.body._id)
+        if(!(req.body.email === personinfo.email)){
+            throw new Error("invalid crediential")
+        }
+
+        const isallowed = await bcrypt.compare(req.body.password,personinfo.password)
+        if(!isallowed){
+            throw new Error("invalid crediential")
+        }
+        res.send("login sucessfully")
+
+    }
+    catch(err){
+        res.send("error"+err.message);
+    }
+})
 
 app.get("/info",async (req,res)=>{
 
